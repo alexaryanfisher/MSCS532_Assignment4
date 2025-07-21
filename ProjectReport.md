@@ -1,7 +1,7 @@
 # Project Report 
 ### by Alexa Fisher
 
-[Pending]
+This report outlines the analysis of heapsort algorithms and the implementation of a Priority Queue application. The analysis includes the time complexity analysis of heapsort for all cases as well as a comparison of heapsort, mergesort, and quicksort with a random pivot performance time. The latter sections of the report include the analysis of the Priority Queue implementation with its design choices, observations, and time complexity analysis.
 
 ## Analysis of Heapsort
 ### Time Complexity Analysis
@@ -124,7 +124,7 @@ The provided main block serves as a demonstration of the Priority Queue's functi
 
 * Insertion: Tasks are inserted and the string representation shows how the heap structure adjusts by displaying the task’s id. Despite insertions,``` peekmax()``` always identifies the highest priority task. It demonstrates the <em>O(</em>log <em>n)</em> efficiency of insert in maintaining the heap property.
 * Extraction: Calls to ``` extractmax()``` remove tasks in decreasing order of priority. Each extraction is visibly fast, which shows its <em>O(</em>log <em>n)</em> time complexity. The heap dynamically readjusts after each removal, ensuring the next highest priority task is always at the root.
-* Modification: Modifications update the task priorities quickly. When Task "T001" (priority 4) is increased to 9, it bubbled up and became the new highest priority task. This demonstration highlighted the  <em>O(</em>log <em>n)</em> efficiency of` ``` _heapify_incr ``` method. In the differing operation, when "T003" (priority 7) decreased to 0, it bubbled down. This showcased ```_heapify_desc``` in a similar fashion. The dynamic adjustments are critical for real-world scheduling where task priorities can rapidly change.
+* Modification: Modifications update the task priorities quickly. When Task "T001" (priority 4) is increased to 9, it bubbled up and became the new highest priority task. This demonstration highlighted the  <em>O(</em>log <em>n)</em> efficiency of` ``` _heapify_incr ``` method. In the differing operation, when "T003" (priority 7) decreased to 0, it bubbled down. This showcased ``` _heapify_desc ``` in a similar fashion. The dynamic adjustments are critical for real-world scheduling where task priorities can rapidly change.
 
 The empirical results from this application confirmed the time complexities of the core operations for the Priority Queue.
 
